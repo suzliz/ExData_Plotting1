@@ -20,13 +20,13 @@ par(mfcol=c(2,2))
 
 ##Sub Plot 1
 plot(hhpc$DT,hhpc$Global_active_power,type="l",
-     ylab="Global Active Power")
+     ylab="Global Active Power",xlab="")
 ##Sub Plot 2
-plot(hhpc$DT,hhpc$Sub_metering_1,type="l",ylab= "Energy Sub Metering")
+plot(hhpc$DT,hhpc$Sub_metering_1,type="l",ylab= "Energy Sub Metering",xlab="")
 lines(hhpc$DT,hhpc$Sub_metering_2)
 lines(hhpc$DT,hhpc$Sub_metering_2,col="red")
 lines(hhpc$DT,hhpc$Sub_metering_3,col="blue")
-legend("topright",legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"),col=c("black","red","blue"),lty=1)
+legend("topright",legend=c("Sub_meter_1","Sub_meter_2","Sub_meter_3"),col=c("black","red","blue"),lty=1,bty="n")
 ##Sub Plot 3
 plot(hhpc$DT,hhpc$Voltage,type="l",
      ylab="Voltage",xlab="Date Time")
