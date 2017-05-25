@@ -15,8 +15,7 @@ hhpc$DT <- dmy_hms(paste(hhpc$Date,hhpc$Time))
 
 ## Create plot 2
 plot(hhpc$DT,hhpc$Global_active_power,type="l",
-     ylab="Global Active Power",
-     main = "Global Active Power over two days")
+     ylab="Global Active Power (kilowatts)", xlab="")
 
 ##Create PNG file
 dev.copy(png,file="plot2.png",width=480, height=480)
